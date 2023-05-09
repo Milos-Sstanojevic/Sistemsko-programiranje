@@ -6,3 +6,11 @@ C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\projekat\RGB_Con
 C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\projekat\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\obj\Debug\RGB_Converter_to_Black-White.csproj.CoreCompileInputs.cache
 C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\projekat\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\obj\Debug\RGB_Converter_to_Black-White.exe
 C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\projekat\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\obj\Debug\RGB_Converter_to_Black-White.pdb
+C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\Sistemsko-programiranje\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\bin\Debug\RGB_Converter_to_Black-White.exe.config
+C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\Sistemsko-programiranje\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\bin\Debug\RGB_Converter_to_Black-White.exe
+C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\Sistemsko-programiranje\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\bin\Debug\RGB_Converter_to_Black-White.pdb
+C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\Sistemsko-programiranje\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\obj\Debug\RGB_Converter_to_Black-White.csproj.AssemblyReference.cache
+C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\Sistemsko-programiranje\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\obj\Debug\RGB_Converter_to_Black-White.csproj.SuggestedBindingRedirects.cache
+C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\Sistemsko-programiranje\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\obj\Debug\RGB_Converter_to_Black-White.csproj.CoreCompileInputs.cache
+C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\Sistemsko-programiranje\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\obj\Debug\RGB_Converter_to_Black-White.exe
+C:\Users\Milos\OneDrive\Radna površina\fax\3. godina\sistemsko\Sistemsko-programiranje\RGB_Converter_to_Black-White\RGB_Converter_to_Black-White\obj\Debug\RGB_Converter_to_Black-White.pdb

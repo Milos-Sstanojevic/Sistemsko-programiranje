@@ -13,7 +13,7 @@ namespace WebServer
     class Program
     {
         static readonly Dictionary<string, byte[]> cache = new Dictionary<string, byte[]>();
-        static readonly string rootFolder = "C:\\Users\\Milos\\OneDrive\\Radna površina\\fax\\3. godina\\sistemsko\\projekat\\RGB_Converter_to_Black-White\\RGB_Converter_to_Black-White\\bin\\Debug";
+        static readonly string rootFolder = "C:\\Users\\Milos\\OneDrive\\Radna površina\\fax\\3. godina\\sistemsko\\Sistemsko-programiranje\\RGB_Converter_to_Black-White\\RGB_Converter_to_Black-White\\bin\\Debug";
 
         static void Main(string[] args)
         {
@@ -48,7 +48,7 @@ namespace WebServer
                     if (parts.Length == 3 && parts[0] == "GET")
                     {
                         string filename = parts[1].Substring(1);
-                        string filepath = Path.Combine(rootFolder, filename);
+                        string filepath = rootFolder + "/" + filename;
 
                         Console.WriteLine("Putanja to fajla je: "+filepath);
 
@@ -76,6 +76,7 @@ namespace WebServer
                             }
                             else if (File.Exists(filepath))
                             {
+                                
                                 Console.WriteLine("Prevodim sliku: " + filename + ", u crno - belu sliku");
 
                                 using (Bitmap bmp = new Bitmap(filepath))
@@ -83,7 +84,7 @@ namespace WebServer
                                 {
                                     bmp.Save(ms, ImageFormat.Jpeg);
                                     byte[] bytes = ms.ToArray();
-                                    byte[] converted = ConvertToBlackAndWhite(bytes);
+                                    byte[] converted = ConvertToBlackAndWhite(bytes,filename);
                                     cache[filepath] = converted;
 
                                     writer.Write("HTTP/1.1 200 OK\r\n");
@@ -93,6 +94,7 @@ namespace WebServer
                                     writer.Flush();
                                     stream.Write(converted, 0, converted.Length);
                                 }
+
                             }
                             else
                             {
@@ -127,7 +129,7 @@ namespace WebServer
             }
         }
 
-        static byte[] ConvertToBlackAndWhite(byte[] input)
+        static byte[] ConvertToBlackAndWhite(byte[] input,string filename)
         {
             Console.WriteLine("Pozvana funkcija za konverziju u crno - belu sliku");
             using (MemoryStream ms = new MemoryStream(input))
@@ -142,6 +144,9 @@ namespace WebServer
                         bmp.SetPixel(i, j, Color.FromArgb(average, average, average));
                     }
                 }
+
+                string newFilename = rootFolder + Path.GetFileNameWithoutExtension(filename) + "_bw" + Path.GetExtension(filename);
+                bmp.Save(newFilename, ImageFormat.Jpeg);
                 using(MemoryStream ms1= new MemoryStream())
                 {
                     bmp.Save(ms1, ImageFormat.Jpeg);
